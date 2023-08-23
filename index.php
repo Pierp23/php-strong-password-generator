@@ -1,6 +1,6 @@
 <?php
 
-include __DIR__ . '/./functions.php';
+include_once __DIR__ . '/./functions.php';
 
 ?>
 
@@ -30,7 +30,7 @@ include __DIR__ . '/./functions.php';
 
     <main>
         <div class="container">
-            <form action="" method="get">
+            <form action="passgenerator.php" method="get">
                 <div class="fs-3">
                     <label for="password">Scegli la lunghezza della tua password</label>
                     <input name="password" id="password" type="number">
@@ -38,18 +38,6 @@ include __DIR__ . '/./functions.php';
                 <button class="fs-3" type="submit">Genera password</button>
             </form>
         </div>
-
-        <div class="container my-5">
-            <h2>
-                La password generata è:
-            </h2>
-            <p class="fs-1">
-                <?php echo randomPassword() ?>
-            </p>
-        </div>
-
-
-
     </main>
 </body>
 
